@@ -69,7 +69,7 @@
 
 <h3>Attendees</h3>
 <ul>
-<li>Cambridge: Andrew Moore, Nik Sultana, Hwanju Kim
+<li>Cambridge: Andrew Moore, Nik Sultana, Hwanju Kim, Marco Forconesi
 </li><li>Imperial College: Richard Clegg, Peter Pietzuch
 </li><li>Nottingham: Richard Mortier
 </li><li>
@@ -84,7 +84,7 @@ Industrial partners: Citrix, NetApp, Netronome, Xilinx
 <li>11:30 Presentations by Industrial advisors</li>
 <li>13:00 Lunch</li>
 <li>13:45 NaaS box, application specific middlebox (plan and discussion)</li>
-<li>14:15 NetFPGA TCP endpoint/task engine (plan and discussion)</li>
+<li>14:15 NetFPGA DMA engine (plan and discussion)</li>
 <li>14:45 Mirage SDN switching and control (plan and discussion)</li>
 <li>15:30 Coffee break </li>
 <li>15:45 Progress summary, next steps</li>
@@ -142,8 +142,17 @@ a high-speed network environment (10G and above).
 A brief description of the plans for this will be followed by a general
 discussion about the best ways to proceed.
 </p>
-<h4>NetFPGA TCP endpoint</h4>
-<p>Description to follow (please alter title if needed)</p>
+<h4>NetFPGA DMA for high-performance networking and acceleration</h4>
+The goal of this project is to make use of NetFPGA for both NIC and 
+general-purpose acceleration by means of high-performance/PCI-efficient
+DMA engine. The entire hardware (DMA engine) and software (device driver)
+are being developped from scratch and open-sourced for the current and 
+next generation of NetFPGA boards. The new DMA/driver can be used for
+high-performance packet processing and offloading of compute-intensive
+application functions. This project expects its open implementation to help 
+extend NetFPGA to accommodate various application-aware middlebox
+functionality beyond NIC.
+
 <h4>Mirage SDN switching and control</h4>
 <p>Description to follow (please alter title if needed)</p>
 <h4>Progress summary and next steps</h4>
