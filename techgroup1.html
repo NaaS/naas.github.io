@@ -123,11 +123,16 @@ an on-path middlebox that can speed up processing for Hadoop and Solr
 at line rate.  This improves the processing power of these
 technologies and reduces the burden they put on the data centre network.</p>
 <h4>Progress to date: Mirage/OpenFlow</h4>
-<p>OpenFlow is the best-known and most widely deployed SDN technology.
-Work within the project has implemented a lightweight switch capable of
-OpenFlow version 1.4 (the latest version at the time of writing) using
-unikernels within the Mirage/Xen environment.  This allows the deployment
-of an extremely lightweight software switch.</p>
+<p>In this strand of work, the project has built an OpenFlow unikernel. 
+Unikernels are small, type-safe, memory-safe application-specific virtual machines. 
+Our OpenFlow unikernel supports both switch and controller functions, and is built in OCaml, 
+a  memory-safe statically-typed language that's immune to certain classes of bug, using 
+Mirage OS. Unikernels are both much smaller and (typically) faster than other virtual machines, 
+e.g., with a memory footprint typically less than 7MB. These OpenFlow  unikernels will enable 
+middleboxes with custom sophisticated switching and routing protocols to be managed by a 
+logically centralised controller.  At the current time we have an operational OpenFlow 1.4
+switch built as a unikernel using the Frenetic libraries.
+</p>
 <h4>Industrial Partner presentations</h4>
 <p>Details to follow</p>
 <h4>NaaS box: application specific middlebox</h4>
@@ -154,7 +159,11 @@ extend NetFPGA to accommodate various application-aware middlebox
 functionality beyond NIC.
 
 <h4>Mirage SDN switching and control</h4>
-<p>Description to follow (please alter title if needed)</p>
+<p> After performance tuning our current implementation, our future plans include 
+extending our OpenFlow  switch implementation to handle complex application-specific 
+protocols and uses requiring features such as DPI and modification of packet payload 
+data. We are also investigating use of more recent SDN frameworks than OpenFlow such as 
+Protocol Oblivious Forwarding (POF) from Huawei.</p>
 <h4>Progress summary and next steps</h4>
 <p>
 This wrap-up session will allow us to critique the progress so far and,
