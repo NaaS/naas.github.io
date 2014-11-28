@@ -71,7 +71,7 @@
 <ul>
 <li>Cambridge: Marco Forconesi, Hwanju Kim, Anil Madhavapeddy, Andrew Moore, Nik Sultana
 </li><li>Imperial College: Abdul Alim, Richard Clegg, Paolo Costa, Peter Pietzuch, Alex Wolf
-</li><li>Nottingham: Masoud Koleini, Richard Mortier Carlos Oviedo
+</li><li>Nottingham: Masoud Koleini, Richard Mortier, Carlos Oviedo
 </li><li>BT: Bob Briscoe, Winston Carrera
 </li><li>Citrix: James Bulpin, Rob Hoes, Dave Scott
 </li><li>NetApp: Lars Eggert
@@ -82,11 +82,12 @@
 <h3>Summary agenda</h3>
 <ul>
 <li>10:30 Start of meeting and coffee</li>
-<li>10:45 NaaS project overview</li>
-<li>11:00 Progress to date -- NetAgg box, Mirage/OpenFlow</li>
-<li>11:30 Presentations by Industrial advisors</li>
+<li>10:45 NaaS project overview (Peter Pietzuch)</li>
+<li>11:00 Progress to date -- NetAgg box (Paolo Costa)</li>
+<li>11:15 Progress to date -- Mirage/OpenFlow (Masoud Koleini)</li>
+<li>11:30 Presentations by Industrial advisors </li>
 <li>13:00 Lunch</li>
-<li>14:00 NaaS box, application specific middlebox (plan and discussion)</li>
+<li>14:00 NaaS box, application specific middlebox (plan and discussion) (Richard Clegg)</li>
 <li>14:30 NetFPGA DMA engine (plan and discussion)</li>
 <li>15:00 Mirage SDN switching and control (plan and discussion)</li>
 <li>15:30 Coffee break </li>
@@ -108,7 +109,7 @@ expertise of industrial partners.</li>
 existing industrial partners are fully explored.</li>
 </ul>
 <h3>Agenda in detail</h3>
-<h4>NaaS project overview</h4>
+<h4>NaaS project overview (Peter Pietzuch)</h4>
 <p>The broad aim of the NaaS project is to investigate in-network
 line rate processing that can help data centres where their performance
 is network bound.  In particular this involves several elements:
@@ -120,12 +121,12 @@ such as the NetFPGA boards where appropriate.</li>
 <li>Routing and filtering streams as appropriate using carefully
 designed Software Defined Network (SDN) techniques.</li>
 </ul>
-<h4>Progress to date: NetAgg box</h4>
+<h4>Progress to date: NetAgg box (Paolo Costa)</h4>
 <p>This is an implementation of the first stage of the NaaS vision,
 an on-path middlebox that can speed up processing for Hadoop and Solr
 at line rate.  This improves the processing power of these
 technologies and reduces the burden they put on the data centre network.</p>
-<h4>Progress to date: Mirage/OpenFlow</h4>
+<h4>Progress to date: Mirage/OpenFlow (Masoud Koleini)</h4>
 <p>In this strand of work, the project has built an OpenFlow unikernel. 
 Unikernels are small, type-safe, memory-safe application-specific virtual machines. 
 Our OpenFlow unikernel supports both switch and controller functions, and is built in OCaml, 
@@ -144,7 +145,7 @@ switch built as a unikernel using the Frenetic libraries.
 <p>We will summarize Citrix's product interest in software-defined networking and adjacent areas; this will focus on our server virtualization and IaaS cloud products, XenServer and CloudPlatform, but will also touch on our networking products including NetScaler. We will describe XenServer's current and desired future use of relevant technologies such the Open vSwitch and Mirage-based services. We will conclude by sharing our thoughts on the future of network services in a commoditized platform.</p>
 <h4>Industrial Partner presentations:</h4>
 <p>More to follow<p>
-<h4>NaaS box: application specific middlebox</h4>
+<h4>NaaS box: application specific middlebox (Richard Clegg)</h4>
 <p>
 The project will generalise the NetAgg work to produce a middlebox
 design that will allow a wide variety of middlebox tasks (both
