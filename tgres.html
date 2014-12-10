@@ -129,21 +129,92 @@ are 'application author' AND 'datacentre manager'."
 
 <h3>NaaS box, application specific middlebox (Richard Clegg)</h3>
 
-<p><a href="tg1pres/prp-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a></p>
+<p><a href="tg1pres/rgc-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a>
+Discussion notes: "What about encryption?  Problem with terminating encrypted streams
+at a middlebox."  "What data structures should language allow?  Associative arrays?"
+</p>
 
 <h3>Endpoint teleportation (Nik Sultana)</h3>
 
-<p><a href="tg1pres/ns-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a></p>
+<p><a href="tg1pres/ns-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a>
+Discussion notes: 
+</p>
 
 <h3>Mirage SDN switching and control (Richard Mortier)</h3>
 
 <p><a href="tg1pres/mort-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a>
 <a href="tg1pres/mort-naas-techgroup-cambs-14.pdf">PDF slideset</a>
-Discussion notes: </p>
+Discussion notes: "PoF and P4 are working on a merged solution."  "'Why is x86 faster than
+ARM?' 'Possibly issues with memory mapping, tuning may improve results for ARM'"
+"Are you assuming a single manager for the infrastructure?"
+"Show Xen no worse for fundamental latencies.  Scheduling decisions across hardware boundaries."
+"Orchestration across entire orchestra is complex."
+</p>
 
 <h3>Progress summary, next steps (Alex Wolf)</h3>
 
-<p>Summary to follow.</p>
+<p>Project is work in progress, bridging layers int he stack, different levels of
+abstraction.  
+Themes: Is it appropriate to be talking about middleboxes or should
+we be talking about virtual switches?  Is end-to-end principle dead
+or are we happy for applications to interact more closely with network?
+Standards are an open question?
+
+Universities should be involved with setting standards?  
+Perhaps research should lead and be ahead of standardisation?
+
+Can you solve "network" problem in isolation impacts on storage +
+computation?  Security remains an issue.
+
+Middlebox versus end-to-end: Applications spread across many entities,
+not "traditional middlebox" -- analogous to building applications on 
+AWS (PaaS).  This is another part of disaggregation story not a
+middlebox.  
+
+Middlebox implementation detail of intelligent network -- hard problem
+is knowing how to split application between network and servers when
+both are processing elements.  Middlebox perhaps wrong as a term?
+
+What things will become industry trends?  Zoom out "is netagg different
+from just changing toplogy?"  Is general purpose computer sufficient for most
+needs -- trend to homogeneity?  
+
+Key driver must be cost -- in terms of developer time, cost of hardware
+resources and management.  Diverse hosts with different properties
+"low latency", "big storage", "many network ports" could prove a
+more cost-effective solution.
+
+NetFPGA part of a family of devices that do similar things?  
+
+Need to find a differentiator for the project "Don't want to be 'just
+another middlebox'"
+
+TAPS group for standardisation may be relevant to project.  
+
+How "clean slate" do we want to be as a project?  Do we target legacy 
+applications or are we "bolder" and assume datacentres could change if
+a new approach was sufficiently beneficial?
+
+Regardless of technology/code, could the lessons learned be passed on?
+
+Core assumption is "cooperative environment" -- realistic?  In a cloud
+environment application may not "play ball".  Often clients like 
+"constant performance" -- not going to understand "something got slower
+because something else got 'hot'"?
+
+"Maple: Simplifying SDN Programming Using Algorithmic Policies"
+http://www.ece.cmu.edu/~ece739/papers/maple.pdf
+
+Stuart has P4 parser written in python -- would like to Open Source --
+could be useful ingredient.  Gordon also interested in P4 convergence
+and could provide help/advice on NetFPGA.  
+
+If customers have flexibility to put code onto devices this needs
+a lot of care.  Some customers are not willing to let people know about
+source -- want opaque binary blob due to proprietary code.
+
+Most likely meeting time would be in one year.
+</p>
 
 </div></div></div>  </div>
 
