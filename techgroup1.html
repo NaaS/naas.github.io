@@ -98,7 +98,7 @@ from 10:30 to 16:30 (room number FW11).
 <li>12:45 Industrial Partner presentations: NetApp</li>
 <li>13:00 Lunch</li>
 <li>14:00 NaaS box, application specific middlebox (Richard Clegg)</li>
-<li>14:30 NetFPGA DMA engine </li>
+<li>14:30 Endpoint teleportation (Nik Sultana) </li>
 <li>15:00 Mirage SDN switching and control </li>
 <li>15:30 Coffee break </li>
 <li>15:45 Progress summary, next steps</li>
@@ -170,17 +170,14 @@ a high-speed network environment (10G and above).
 A brief description of the plans for this will be followed by a general
 discussion about the best ways to proceed.
 </p>
-<h4>NetFPGA DMA for high-performance networking and acceleration</h4>
+<h4>Endpoint teleportation (Nik Sultana)</h4>
 <p>
-The goal of this project is to make use of NetFPGA for both NIC and 
-general-purpose acceleration by means of high-performance/PCI-efficient
-DMA engine. The entire hardware (DMA engine) and software (device driver)
-are being developped from scratch and open-sourced for the current and 
-next generation of NetFPGA boards. The new DMA/driver can be used for
-high-performance packet processing and offloading of compute-intensive
-application functions. This project expects its open implementation to help 
-extend NetFPGA to accommodate various application-aware middlebox
-functionality beyond NIC.
+I describe ongoing and planned work for the development of a hardware platform
+for in-network computation, based on NetFPGA. Such a platform could host the NaaS box described
+in the previous talk. This development is intended to lower network latency,
+improve resource-utilisation, and facilitate scale-out and consolidation. I will describe the main challenges we are
+facing -- including programming heterogeneous hardware, and moving applications
+to run on the network -- and how we are tackling them.
 </p>
 
 <h4>Mirage SDN switching and control</h4>
