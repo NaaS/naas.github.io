@@ -86,14 +86,14 @@
 
 <h3>Progress to date -- NetAgg box (Paolo Costa)</h3>
 
-<p>Slides to follow.  Discussion points -- "Why are you making cleverness in the network when the trend is to
+<p><a href="tg1pres/mort-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a> Discussion points -- "Why are you making cleverness in the network when the trend is to
 dumb network, clever endpoints?"  "East-West style networks might change what you are doing?"  "Different topologies 
 (e.g. toroidal) can give more flexible options"  "Incast remains a problem that NaaS can solve."
 </p>
 
 <h3>Progress to date -- Mirage/OpenFlow (Masoud Koleini)</h3>
 
-<p><a href="tg1pres/prp-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a>.  
+<p><a href="tg1pres/mrc-naas-techgroup-cambs-14.pptx">Powerpoint slideset</a>.  
 Discussion points -- "What about switching latency?" "OpenFlow is not 'high-level' -- app developers don't want to know at this level."</p>
 
 <h3>Industrial Partner presentations: Netronome (Rolf Neugebauer)</h3>
@@ -114,7 +114,22 @@ to express their needs?' 'Provide basic network abstraction, network processing 
 
 <h3>Industrial Partner presentations: BT (Winston Carrera, Bob Briscoe)</h3>
 
+<p> Discussion points: Network-as-a-Service vision "Medium" latency (lower than commodity but not "lowest
+possible") as service for those where lat totally critical (e.g. finance).  "Analytics as a Service"
+analyse data on the wire in real time.  APIs expose product catalogue of services that could be composed
+together -- APIs communicate via SDN controller to implement on pre-built network carving up slices of
+network management.  Customers can provision their own clients to slice the available bandwidth.  
+Agile optical network.  Customers can specify the ability to burst over their agreed data rates automatically
+and be billed extra.  Packets stored for 20 minutes and triggered conditions cause longer term storage for
+diagnostics.  Data acquisition architecture is vital (robust one in place).  How small can we make VM
+infrastructure we use?  Suggestion xen/mirage might be useful in this space.
+</p>
 
+<p> Discussion points: Network function virtualisation (NFV) standardisation ongoing -- working very fast
+for a standards body.  Largest ever ETSI ISG.  Open Platform OPNFV launched Oct 2014 -- Open Source as 
+fast path to standardisation.  "CAPEX and OPEX reduced but does it enable anything new?"  Enables faster 
+deployment, shorter window for development. 
+</p>
 
 <h3>Industrial Partner presentations: NetApp</h3>
 
